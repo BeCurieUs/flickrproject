@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Flickr from "flickrapi";
+import Flickr from "/node_modules/flickrapi";
 const myapi_key = "3347f47687a578f9048de57e5561217f";
 const api_secret = "5c9d856058d4cd88"
 
