@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Flickr from "flickrapi";
+const myapi_key = "3347f47687a578f9048de57e5561217f";
+const api_secret = "5c9d856058d4cd88"
+
+
+
+
+const flickr = new Flickr({
+  api_key: myapi_key,
+  progress: false
+});
+
+
 
 class App extends Component {
   render() {
