@@ -6,8 +6,8 @@ const api_secret = "5c9d856058d4cd88"
 class App extends Component {
 
   state = {
-    picList : [],
-    searchTerm : "cats",
+    collectionsList : [],
+    user_id : "cats",
   }
 
   componentDidMount() {
@@ -31,24 +31,24 @@ class App extends Component {
   }
 
 
-  handleSubmit= (event) => {
-    event.preventDefault();
-    this.setState({searchTerm :event.target.value}) 
-  }
+  // handleSubmit= (event) => {
+  //   event.preventDefault();
+  //   this.setState({searchTerm :event.target.value}) 
+  // }
 
 
 
 
 
-  handleChange = (event) =>{
-    this.setState({searchTerm: event.target.value});
-  }
+  // handleChange = (event) =>{
+  //   this.setState({searchTerm: event.target.value});
+  // }
 
-  handleSubmit = (event) =>{
-    event.preventDefault();
-    this.setState({picList:[]})
-    this.searchFlickr();
-  }
+  // handleSubmit = (event) =>{
+  //   event.preventDefault();
+  //   this.setState({picList:[]})
+  //   this.searchFlickr();
+  // }
 
 
   render() {
