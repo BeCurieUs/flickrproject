@@ -16,4 +16,6 @@
   padding:5px;
 }
 
-
+.Form * {
+  margin: 3px;
+}
