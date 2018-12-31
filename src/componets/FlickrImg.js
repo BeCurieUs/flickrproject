@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class FlickrImg extends Component {
+class Flickrimg extends Component {
 
 
   render() {
@@ -10,5 +10,5 @@ class FlickrImg extends Component {
   }
 }
 
-export default FlickrImg;
+export default Flickrimg;
 

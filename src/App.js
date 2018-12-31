@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FlickrImg from "./componets/FlickrImg"
+import FlickrImg from "./componets/Flickrimg"
 import './App.css';
 const myapi_key = "3347f47687a578f9048de57e5561217f";
 const api_secret = "5c9d856058d4cd88"
