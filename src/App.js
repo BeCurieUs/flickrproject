@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FlickrImg from "./componets/FlickrImg"
 import './App.css';
 const myapi_key = "3347f47687a578f9048de57e5561217f";
 const api_secret = "5c9d856058d4cd88"
@@ -48,11 +49,6 @@ class App extends Component {
     })
   }
 
-
-  testyTesterson = () => {
-    return <img />
-  }
-
   // image tag search code
 
   // searchFlickr = () =>{
@@ -92,19 +88,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Form">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Enter Your Flickr User ID:
-          <input type="text" value={this.state.searchTerm} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit"/>
-        </form>
-        <div className="App">
-          {this.state.completePhotostream.map(photoAlbumb => { 
+      <div className="main">
+        <div className="form">
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Enter Your Flickr User ID:
+            <input type="text" value={this.state.searchTerm} onChange={this.handleChange} />
+            </label>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
+        <div className="photoCollections">
+          {this.state.completePhotostream.map((photoAlbumb,index) => { 
             return photoAlbumb.title;
           } )}
         </div>
+        
       </div>
     );
   }
