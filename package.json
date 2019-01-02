@@ -2,7 +2,7 @@
   "name": "flickrbackup",
   "version": "0.1.0",
   "private": true,
-  "website":"https://becurieus.github.io/flickrproject/",
+  "website": "https://becurieus.github.io/flickrproject/",
   "dependencies": {
     "@material-ui/core": "^3.8.1",
     "flickrapi": "^0.6.0",
