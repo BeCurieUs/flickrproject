@@ -1,4 +1,4 @@
-.App {
+.photoCollections {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
@@ -16,4 +16,21 @@
   padding:5px;
 }
 
+.form * {
+  margin: 3px;
+}
 
+
+.collection-card-media {
+  min-height:150px;
+  min-width:150px;
+
+}
+
+.title-card {
+  max-width: 150px;
+}
+
+.collection-card {
+  margin: 3px;
+}
