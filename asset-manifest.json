@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.0d4f53d3.chunk.css",
-  "main.js": "/static/js/main.504a150d.chunk.js",
-  "main.js.map": "/static/js/main.504a150d.chunk.js.map",
-  "static/js/1.f0bcfdb0.chunk.js": "/static/js/1.f0bcfdb0.chunk.js",
-  "static/js/1.f0bcfdb0.chunk.js.map": "/static/js/1.f0bcfdb0.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.0d4f53d3.chunk.css.map": "/static/css/main.0d4f53d3.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.1868643b049ec60787a0100c34aac45f.js": "/precache-manifest.1868643b049ec60787a0100c34aac45f.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/flickrproject/static/css/main.0d4f53d3.chunk.css",
+  "main.js": "/flickrproject/static/js/main.8c728aa9.chunk.js",
+  "main.js.map": "/flickrproject/static/js/main.8c728aa9.chunk.js.map",
+  "static/js/1.f0bcfdb0.chunk.js": "/flickrproject/static/js/1.f0bcfdb0.chunk.js",
+  "static/js/1.f0bcfdb0.chunk.js.map": "/flickrproject/static/js/1.f0bcfdb0.chunk.js.map",
+  "runtime~main.js": "/flickrproject/static/js/runtime~main.182f34e7.js",
+  "runtime~main.js.map": "/flickrproject/static/js/runtime~main.182f34e7.js.map",
+  "static/css/main.0d4f53d3.chunk.css.map": "/flickrproject/static/css/main.0d4f53d3.chunk.css.map",
+  "index.html": "/flickrproject/index.html",
+  "precache-manifest.f7bbb5e0f3409ac6ac37410e025355a9.js": "/flickrproject/precache-manifest.f7bbb5e0f3409ac6ac37410e025355a9.js",
+  "service-worker.js": "/flickrproject/service-worker.js"
 }
