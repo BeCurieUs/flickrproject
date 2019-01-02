@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import FlickrImg from "./componets/Flickrimg"
+import Flickrimg from "./componets/Flickrimg"
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import './App.css';
 const myapi_key = "3347f47687a578f9048de57e5561217f";
 const api_secret = "5c9d856058d4cd88"
@@ -30,7 +37,7 @@ class App extends Component {
           // console.log(photoCollection.title._content)
           // console.log(innerData.photoset.photo)
           this.setState({
-            completePhotostream : [...this.state.completePhotostream,{title : photoCollection.title._content , photos : innerData.photoset.photo}]
+            completePhotostream : [...this.state.completePhotostream,{title : photoCollection.title._content, farm:photoCollection.farm, id:photoCollection.primary, server:photoCollection.server, secret:photoCollection.secret , photos : innerData.photoset.photo}]
           })
         })
       });
@@ -70,9 +77,16 @@ class App extends Component {
   //   event.preventDefault();
   //   this.setState({searchTerm :event.target.value}) 
   // }
+  getSize = () =>{
+    if(this.props.size!==undefined){
+      return "_"+this.props.size
+    }
+    return "";
+  }
 
-
-
+  urlGenerator = (farm,server,id,secret,size) => {
+    return `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}${this.getSize()}.jpg`
+  }
 
 
   // handleChange = (event) =>{
@@ -100,8 +114,23 @@ class App extends Component {
         </div>
         <div className="photoCollections">
           {this.state.completePhotostream.map((photoAlbumb,index) => { 
-            return photoAlbumb.title;
-          } )}
+            return (
+            <Card className="collection-card">
+              <CardMedia
+                className="collection-card-media"
+                image={this.urlGenerator(photoAlbumb.farm, photoAlbumb.server,
+                  photoAlbumb.id, photoAlbumb.secret,"q")}
+                title={photoAlbumb.title}
+              />
+              {/* <Flickrimg farm={photoAlbumb.farm} server={photoAlbumb.server}
+                id={photoAlbumb.id} secret={photoAlbumb.secret} title={photoAlbumb.title}
+                size="q">
+              </Flickrimg> */}
+              <CardContent className="title-card">
+                <Typography variant="title" >{photoAlbumb.title}</Typography>
+              </CardContent>
+            </Card>);
+          })}
         </div>
         
       </div>
